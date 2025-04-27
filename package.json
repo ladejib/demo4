@@ -1,19 +1,12 @@
 {
   "name": "playwright-k8s-template",
   "version": "1.0.0",
-  "main": "playwright.config.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
     "test": "npx playwright test",
-    "merge-reports": "npx playwright merge-reports --reporter html ./report
+    "merge-reports": "npx playwright merge-reports --reporter html ./reports"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@playwright/test": "^1.52.0"
+  "dependencies": {
+    "@playwright/test": "^1.50.0"
+    "playwright": "^1.52.0"
   }
 }
